@@ -34,4 +34,13 @@ rootProject.name = "hormone"
 
 includeBuild("../able")
 
+includeSubs("functions", "../functions", "core")
+includeSubs("kronecker", "../kronecker", "core")
+includeSubs("kommander", "../kommander", "core", "coroutines")
+includeSubs("kollections", "../kollections", "atomic", "interoperable")
+includeSubs("kevlar", "../kevlar", "core")
+includeSubs("kase", "../kase", "core")
+includeSubs("koncurrent-executors", "../koncurrent/executors", "core", "coroutines", "mock")
+includeSubs("koncurrent-later", "../koncurrent/later", "core", "coroutines", "test")
+
 includeSubs("hormone", ".", "core")
