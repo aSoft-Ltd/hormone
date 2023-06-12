@@ -1,4 +1,5 @@
 plugins {
+    kotlin("plugin.serialization")
     kotlin("multiplatform")
     id("tz.co.asoft.library")
 }
@@ -19,6 +20,7 @@ kotlin {
             dependencies {
                 api(projects.koncurrentLaterCore)
                 api(projects.kroneckerCore)
+                api(projects.kronoKotlinx)
             }
         }
     }
