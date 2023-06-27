@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
 import krono.Instant
 
 @Serializable
-data class ActionDate (
+data class ActionDateDto (
     val created: Instant,
     val updated: Instant
 )
