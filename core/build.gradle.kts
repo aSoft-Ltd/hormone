@@ -19,7 +19,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 api(libs.koncurrent.later.core)
-                api(projects.kroneckerCore)
+                api(libs.kronecker.core)
                 api(projects.kronoKotlinx)
             }
         }
