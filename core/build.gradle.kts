@@ -20,7 +20,7 @@ kotlin {
             dependencies {
                 api(libs.koncurrent.later.core)
                 api(libs.kronecker.core)
-                api(projects.kronoKotlinx)
+                api(libs.krono.kotlinx)
             }
         }
     }
