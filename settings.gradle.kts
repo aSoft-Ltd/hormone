@@ -14,7 +14,7 @@ fun includeSubs(base: String, path: String = base, vararg subs: String) {
 }
 
 listOf(
-    "kommander", "kronecker", "koncurrent", "krono"
+    "kommander", "kronecker", "koncurrent", "krono-core"
 ).forEach { includeBuild("../$it") }
 
 rootProject.name = "hormone"
