@@ -10,7 +10,7 @@ interface Crud<out T> {
     val asCreate get() = this as? Create
     val asUpdate get() = this as? Update
     val asDelete get() = this as? Delete
-    val asView get() = this as? View
+    val asRead get() = this as? Read
 }
 
 data object Create : Crud<Nothing>
@@ -29,6 +29,7 @@ fun <T> Delete(data: T) = Single(data)
 fun <T> Delete(data: List<T>) = Many(data)
 
 data class Single<out T>(val data: T) : Delete<T>
+
 data class Many<out T>(val data: List<T>) : Delete<T>
 
-data class View<out T>(val data: T) : Crud<T>
+data class Read<out T>(val data: T) : Crud<T>
