@@ -4,7 +4,7 @@
 package hormone
 
 import koncurrent.Later
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface Creator<in P, out R> {
     fun create(params: P): Later<R>

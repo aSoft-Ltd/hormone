@@ -5,7 +5,7 @@ package hormone
 
 import kollections.List
 import koncurrent.Later
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface Deleter<out R : Any> {
     fun delete(uid: String): Later<R?>

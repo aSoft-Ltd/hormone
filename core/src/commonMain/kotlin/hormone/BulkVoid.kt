@@ -4,7 +4,7 @@ package hormone
 
 import kollections.List
 import koncurrent.Later
-import kotlin.js.JsExport
+import kotlinx.JsExport
 
 interface BulkVoid<out R> {
     fun void(uid: String): Later<R>

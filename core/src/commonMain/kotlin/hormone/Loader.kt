@@ -6,7 +6,7 @@ package hormone
 import kollections.List
 import koncurrent.Later
 import kronecker.LoadOptions
-import kotlin.js.JsExport
+import kotlinx.JsExport
 import kotlin.js.JsName
 
 interface Loader<out R> {
