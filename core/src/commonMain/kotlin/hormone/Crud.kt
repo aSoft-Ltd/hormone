@@ -5,6 +5,7 @@ package hormone
 
 import kotlinx.JsExport
 import kotlin.js.JsName
+import kollections.List
 
 interface Crud<out T> {
     val asCreate get() = this as? Create
