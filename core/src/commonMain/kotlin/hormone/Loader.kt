@@ -5,6 +5,11 @@ package hormone
 
 import kollections.List
 import koncurrent.Later
+import koncurrent.later.then
+import koncurrent.later.andThen
+import koncurrent.later.andZip
+import koncurrent.later.zip
+import koncurrent.later.catch
 import kronecker.LoadOptions
 import kotlinx.JsExport
 import kotlin.js.JsName
