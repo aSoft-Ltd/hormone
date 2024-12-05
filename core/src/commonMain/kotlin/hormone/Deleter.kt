@@ -12,7 +12,7 @@ import koncurrent.later.zip
 import koncurrent.later.catch
 import kotlinx.JsExport
 
-interface Deleter<out R : Any> {
+interface Deleter<out R> {
     fun delete(uid: String): Later<R?>
     fun deleteBulk(ids: List<String>): Later<List<R?>>
 }
