@@ -18,5 +18,5 @@ interface Loader<out R> {
 
 
     @JsName("loadById")
-    fun load(uid: String): Later<R>
+    fun load(uid: String, source: LoadSource=LoadSource.REMOTE): Later<R>
 }
